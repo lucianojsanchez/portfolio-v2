@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="scroll-behavior: smooth">
         <header>
           <NavBar />
         </header>
