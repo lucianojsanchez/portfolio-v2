@@ -29,6 +29,7 @@ import {
   SiRender,
   SiTailwindcss,
   SiFramer,
+  SiNextdotjs,
 } from "react-icons/si";
 
 export const frontendTech = [
@@ -59,8 +60,8 @@ export const frontendTech = [
   {
     name: "Javascript",
     icon: (
-      <SiReact
-        style={{ color: "#61DAFB" }}
+      <SiJavascript
+        style={{ color: "#F7DF1E" }}
         className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover"
       />
     ),
@@ -102,6 +103,12 @@ export const frontendTech = [
     ),
   },
   {
+    name: "Next.js",
+    icon: (
+      <SiNextdotjs className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover" />
+    ),
+  },
+  {
     name: "Tailwind",
     icon: (
       <SiTailwindcss
@@ -110,6 +117,7 @@ export const frontendTech = [
       />
     ),
   },
+
   {
     name: "SASS",
     icon: (
@@ -140,13 +148,94 @@ export const frontendTech = [
 ];
 
 export const backendTech = [
-  { name: "Node.js", icon: "node-icon.svg" },
-  { name: "Express.js", icon: "express-icon.svg" },
-  { name: "Django", icon: "django-icon.svg" },
+  {
+    name: "Node",
+    icon: (
+      <SiNodedotjs
+        style={{ color: "#339933" }}
+        className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover"
+      />
+    ),
+  },
+  {
+    name: "Express",
+    icon: (
+      <SiExpress
+        style={{ color: "#000000" }}
+        className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover"
+      />
+    ),
+  },
+  {
+    name: "Sequelize",
+    icon: (
+      <SiSequelize
+        style={{ color: "#52B0E7" }}
+        className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover"
+      />
+    ),
+  },
+  {
+    name: "Firebase",
+    icon: (
+      <SiFirebase
+        style={{ color: "#FFCA28" }}
+        className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover"
+      />
+    ),
+  },
+  {
+    name: "PostgreSQL",
+    icon: (
+      <SiPostgresql
+        style={{ color: "#336791" }}
+        className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover"
+      />
+    ),
+  },
+  {
+    name: "MongoDB",
+    icon: (
+      <SiMongodb
+        style={{ color: "#47A248" }}
+        className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover"
+      />
+    ),
+  },
 ];
 
-export const toolsTech = [
-  { name: "Git", icon: "git-icon.svg" },
-  { name: "Webpack", icon: "webpack-icon.svg" },
-  { name: "Babel", icon: "babel-icon.svg" },
+export const tools = [
+  {
+    name: "Git",
+    icon: (
+      <SiGit
+        style={{ color: "#F05032" }}
+        className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover"
+      />
+    ),
+  },
+  {
+    name: "GitHub",
+    icon: (
+      <SiGithub className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover" />
+    ),
+  },
+  {
+    name: "Postman",
+    icon: (
+      <SiPostman
+        style={{ color: "#FF6C37" }}
+        className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover"
+      />
+    ),
+  },
+  {
+    name: "Vite",
+    icon: (
+      <SiVite
+        style={{ color: "#646CFF" }}
+        className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover"
+      />
+    ),
+  },
 ];

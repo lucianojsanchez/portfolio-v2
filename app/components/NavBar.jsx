@@ -2,13 +2,15 @@ import React from 'react'
 import Image from 'next/image'
 import logo from "@/public/luciano.png"
 import Link from 'next/link'
+import { Raleway } from 'next/font/google'
 
 const NavBar = () => {
     return (
         <nav className=" dark:bg-gray-900 fixed w-full z-20 top-0 left-0 h-fit items-center bg-opacity-40 backdrop-filter backdrop-blur-sm">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="" className="flex items-center">
-                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">[  Luciano  ]</span>
+                    <Image src="/logo.svg" width={40} height={40} className='filter invert brightness(200%) mr-1' />
+                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Luciano</span>
                 </a>
                 <div className="flex md:order-2">
                     <button type="button" className="text-white bg-[#03FA6E] hover:bg-[#03FA6E] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-[#00b04c] dark:hover:bg-[#03FA6E] dark:focus:ring-blue-800">Resume</button>
@@ -26,10 +28,10 @@ const NavBar = () => {
                             <a href="#technologies" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Technologies</a>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Me</a>
+                            <a href="#about" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Me</a>
                         </li>
                         <li>
-                            <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            <a href="#contact" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
                         </li>
                     </ul>
                 </div>

@@ -21,7 +21,7 @@ const ProjectCards = () => {
     return (
         <div className="my-8 mx-auto max-w-screen-xl">
             <div className="flex items-center my-20 mx-auto max-w-screen-xl">
-                <h1 className="text-4xl md:text-6xl font-bold text-gradient bg-gradient-to-r from-blue-600 to-indigo-800 bg-clip-text text-transparent leading-tight align-middle py-2 pl-4 pr-8">Projects</h1>
+                <h1 className="text-4xl md:text-6xl font-bold text-gradient bg-gradient-to-r from-blue-600 to-indigo-800 bg-clip-text text-transparent leading-tight align-middle py-2 pr-8">Projects</h1>
                 <div className="h-1 bg-gray-400/20 flex-1 mx-5"></div>
             </div>
             <div className="grid grid-cols-1 gap-14 mx-auto max-w-screen-xl max-xl:max-w-[80%]">
@@ -32,13 +32,13 @@ const ProjectCards = () => {
                             <div className={`absolute inset-0 bg-slate-700/60 transition-opacity duration-400 ease-in-out ${isTouched ? 'opacity-0' : ''} hover:opacity-0`} onTouchStart={handleTouchStart} onTouchEnd={handleTouchEnd}></div>
                         </div>
                         <div className=" w-full xl:w-1/2 flex flex-col justify-between rounded-lg mx-8 my-5">
-                            <h2 className="text-sm md:text-2xl font-medium mx-3 mb-3 text-end max-xl:text-start max-sm:text-start">{project.name}</h2>
+                            <h2 className="text-sm md:text-2xl font-bold mx-3 mb-3 text-end max-xl:text-start max-sm:text-start">{project.name}</h2>
                             <div className='xl:bg-slate-700/60 rounded-lg p-5'>
-                                <p className="text-white mb-2 text-md text-end max-xl:text-start">{project.description}</p>
+                                <p className="text-white/70 font-semibold mb-2 text-md text-end max-xl:text-start ">{project.description}</p>
                             </div>
                             <div className="flex flex-wrap mt-4 justify-end max-xl:justify-start mx-3">
                                 {project.stack.map((tech, index) => (
-                                    <span key={index} className="inline-flex items-center bg-gray-200 rounded-full max-xl:px-2 px-3 py-1 text-md max-md:text-xs font-semibold text-gray-700 mr-2 mb-2">
+                                    <span key={index} className="inline-flex items-center bg-gray-200 rounded-full max-xl:px-2 px-3 py-1 text-md max-md:text-xs  text-sm font-bold text-gray-700 mr-2 mb-2">
                                         {tech}
                                     </span>
                                 ))}
