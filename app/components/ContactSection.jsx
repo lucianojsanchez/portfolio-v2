@@ -23,7 +23,7 @@ const ContactSection = () => {
                                         <a href="mailto:lucianojoelsanchez@gmail.com" className="hover:text-blue-400">
                                             <h3 className="text-lg font-bold text-white">Email</h3>
                                         </a>
-                                        <div className="mt-2 min-[1024px]:text-[9px] min-[1280px]:text-[11.5px] text-[6px] max-[425px]:text-[8px] max-[320px]:text-[5px] max-[375px]:text-[7px] font-medium text-white">
+                                        <div className="mt-2 min-[1024px]:text-[9px] min-[1280px]:text-[11.5px] text-[6px] max-[425px]:text-[8px] max-[320px]:text-[4px] max-[375px]:text-[6px] font-medium text-white">
                                             <a href="mailto:lucianojoelsanchez@gmail.com" className="hover:text-blue-400">lucianojoelsanchez@gmail.com</a>
                                         </div>
                                     </div>
