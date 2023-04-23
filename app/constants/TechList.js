@@ -54,7 +54,7 @@ export const frontendTech = [
   {
     name: "CSS Modules",
     icon: (
-      <SiCssmodules className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover" />
+      <SiCssmodules className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover text-white" />
     ),
   },
   {
@@ -105,7 +105,7 @@ export const frontendTech = [
   {
     name: "Next.js",
     icon: (
-      <SiNextdotjs className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover" />
+      <SiNextdotjs className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover text-white" />
     ),
   },
   {
@@ -217,7 +217,7 @@ export const tools = [
   {
     name: "GitHub",
     icon: (
-      <SiGithub className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover" />
+      <SiGithub className="max-xl:w-[48px] max-xl:h-[48px] w-[64px] h-[64px] object-cover text-white" />
     ),
   },
   {
