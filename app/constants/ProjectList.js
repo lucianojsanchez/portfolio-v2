@@ -79,7 +79,7 @@ export const projects = [
   },
   {
     name: "Personal Portfolio v2 (Current)",
-    image: "/pixel.png",
+    image: "/portfoliov2.png",
     description:
       "Presenting my latest portfolio, version 2! I wasn't entirely satisfied with my first portfolio, so I decided to create a new and improved version. I've developed a more elegant and user-friendly design to showcase my skills and projects. The new portfolio features a clean and modern layout with easy navigation, making it simple for visitors to browse and explore my work",
     link: "#",
