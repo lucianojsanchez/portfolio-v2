@@ -16,7 +16,7 @@ const AboutMe = () => {
                         <p class="xl:text-xl sm:text-xl font-semibold text-gray-300 mb-4">Thanks for visiting my portfolio, let me tell you a bit about myself😄.</p>
                         <div class="bg-slate-700 rounded-lg shadow-md overflow-hidden">
                             <p class="xl:text-xl sm:text-lg font-semibold text-gray-300 max-[375px]:text-sm p-6">
-                                Since childhood, I've been passionate about technology, and I was introduced to web development through the PERN stack bootcamp at SoyHenry📚. The experience taught me how to work in a team, improve my problem-solving skills, and deepen my knowledge of web development. I'm always seeking new opportunities to learn and grow, which is why I'm currently enrolled in a Java course.
+                                Since childhood, I&apos;ve been passionate about technology, and I was introduced to web development through the PERN stack bootcamp at SoyHenry📚. The experience taught me how to work in a team, improve my problem-solving skills, and deepen my knowledge of web development. I&apos;m always seeking new opportunities to learn and grow, which is why I&apos;m currently enrolled in a Java course.
                             </p>
                         </div>
                     </div>

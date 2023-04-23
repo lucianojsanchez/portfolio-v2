@@ -9,7 +9,7 @@ const Presentation = () => {
 
 
             <div>
-                <p className="xl:text-xl sm:text-xl font-semibold text-gray-300 mb-4">¡Hello there👋!, I'm</p>
+                <p className="xl:text-xl sm:text-xl font-semibold text-gray-300 mb-4">¡Hello there👋!, I&apos;m</p>
                 <h1 className="xl:text-8xl lg:text-7xl md:text-5xl max-sm:text-6xl max-[375px]:text-[48px] font-bold text-gradient bg-gradient-to-tr from-[#FF0080] to-[#8A2BE2] text-transparent bg-clip-text mb-6 max-w-full ">Luciano Sanchez</h1>
                 <p className='xl:text-md sm:text-xl font-semibold text-gray-300 max-w-4xl mb-4 max-[375px]:text-sm'>FULLSTACK DEVELOPER</p>
                 <p className="xl:text-xl sm:text-xl font-semibold text-gray-300 max-w-4xl max-[375px]:text-sm">As a proactive and detail-oriented developer, I am passionate about building user-friendly and functional web applications. </p>
