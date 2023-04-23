@@ -54,14 +54,14 @@ const ContactSection = () => {
                             </div>
                         </a>
                     </div>
-                    <div className="max-w-xs bg-slate-700 overflow-hidden shadow ">
+                    <div className="max-w-xs bg-slate-700 overflow-hidden shadow rounded-lg">
                         <a href="https://www.linkedin.com/in/lucianojsanchez/" className="hover:text-blue-400">
                             <div className="px-4 py-5 sm:p-6">
                                 <div className="flex max-xl:flex-col items-center">
 
                                     <div className="flex-shrink-0 ">
                                         <a href="https://www.linkedin.com/in/lucianojsanchez/" className="hover:text-blue-400">
-                                            <FaLinkedin className="transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center w-12 h-12" />
+                                            <FaLinkedin className="transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center w-12 h-12 text-white" />
                                         </a>
                                     </div>
 
@@ -128,7 +128,7 @@ const ContactSection = () => {
                                 <div className="flex max-xl:flex-col items-center w-fit">
                                     <div className="flex-shrink-0 ">
                                         <a href="https://twitter.com/lusa_dev" className="hover:text-blue-400">
-                                            <FaTwitter className="transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center w-12 h-12" />
+                                            <FaTwitter className="transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center w-12 h-12 text-white" />
                                         </a>
                                     </div>
 
