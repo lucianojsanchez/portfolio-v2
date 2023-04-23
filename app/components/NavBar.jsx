@@ -96,7 +96,7 @@ const NavBar = () => {
                     <FaBars />
                 </button>
             </div>
-            <div className={`block flex-grow justify-end md:flex md:items-center ${showMenu ? '' : 'hidden'}`}>
+            <div className={`items-center justify-between w-full md:flex md:w-auto md:order-0 ${showMenu ? '' : 'hidden'}`}>
                 <div className=" items-center justify-center">
                     <ul className="flex flex-wrap md:justify-center max-md:flex-col font-bold ml-auto lg:ml-4 xl:mr-[200px] lg:text-lg">
                         <li>
@@ -144,3 +144,25 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+
+{/* <Link
+to="about"
+className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-blue-400 mr-4 cursor-pointer ${active === 'about' ? 'text-blue-400' : ''}`}
+smooth={true}
+duration={650}
+onClick={() => setShowMenu(false)}
+>
+About Me
+</Link>
+</li>
+<li>
+<Link
+to="contact"
+className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-blue-400 mr-4 cursor-pointer ${active === 'contact' ? 'text-blue-400' : ''}`}
+smooth={true}
+duration={650}
+onClick={() => setShowMenu(false)}
+>
+Contact
+</Link> */}
