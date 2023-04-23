@@ -1,43 +1,146 @@
-import React from 'react'
+"use client"
+
+import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
-import logo from "@/public/luciano.png"
-import Link from 'next/link'
-import { Raleway } from 'next/font/google'
+import { FaBars, FaTimes } from 'react-icons/fa';
+
+import { Link } from "react-scroll";
+
+
 
 const NavBar = () => {
+
+
+    const [active, setActive] = useState('');
+    const [showMenu, setShowMenu] = useState(false);
+
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+    };
+
+
+    //------------------------------------------------------------//
+
+
+    useEffect(() => {
+        const options = {
+            duration: 250,
+            offset: -50,
+            smooth: false,
+        };
+        const scroll = new Link('about', options);
+    }, []);
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentPosition = window.scrollY + 120;
+            const projects = document.getElementById('projects');
+            const technologies = document.getElementById('technologies');
+            const about = document.getElementById('about');
+            const contact = document.getElementById('contact');
+
+            if (currentPosition >= contact.offsetTop) {
+                setActive('contact');
+            } else if (currentPosition >= about.offsetTop) {
+                setActive('about');
+            } else if (currentPosition >= technologies.offsetTop) {
+                setActive('technologies');
+            } else if (currentPosition >= projects.offsetTop) {
+                setActive('projects');
+            } else {
+                setActive('');
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
+    //------------------------------------------------------------//
+
+
     return (
-        <nav className=" dark:bg-gray-900 fixed w-full z-20 top-0 left-0 h-fit items-center bg-opacity-40 backdrop-filter backdrop-blur-sm">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="" className="flex items-center">
-                    <Image src="/logo.svg" width={40} height={40} className='filter invert brightness(200%) mr-1' />
-                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Luciano</span>
-                </a>
-                <div className="flex md:order-2">
-                    <button type="button" className="text-white bg-[#03FA6E] hover:bg-[#03FA6E] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-[#00b04c] dark:hover:bg-[#03FA6E] dark:focus:ring-blue-800">Resume</button>
-                    <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-                        <span className="sr-only">Open main menu</span>
-                        <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                    </button>
+        <nav
+            className="flex items-center justify-between flex-wrap p-4 fixed w-full z-20 backdrop-blur-sm bg-slate-300/30"
+            style={{ boxShadow: 'rgba(0, 0, 0, 0.75) 0px 10px 30px -10px' }}
+        >
+            <div className="flex items-center mr-auto">
+                <div className="mr-6">
+                    <Link
+                        to="presentation"
+                        className="flex items-center cursor-pointer"
+                        smooth={true}
+                        duration={650}
+                    >
+                        <div>
+                            <Image
+                                src="/logo.svg"
+                                width={40}
+                                height={40}
+                                className="filter invert brightness(200%) mr-1"
+                            />
+                        </div>
+                        <span className="text-2xl font-semibold dark:text-white">Luciano</span>
+                    </Link>
                 </div>
-                <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                    <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            </div>
+            <div className="block md:hidden">
+                <button
+                    onClick={toggleMenu}
+                    className="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-blue-400 hover:border-white"
+                >
+                    <FaBars />
+                </button>
+            </div>
+            <div className={`block flex-grow justify-end md:flex md:items-center ${showMenu ? '' : 'hidden'}`}>
+                <div className=" items-center justify-center">
+                    <ul className="flex flex-wrap md:justify-center max-md:flex-col font-bold ml-auto lg:ml-4 xl:mr-[200px] lg:text-lg">
                         <li>
-                            <a href="#projects" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 " aria-current="page">Projects</a>
+                            <Link to="projects" className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-blue-400 mr-4 cursor-pointer ${active === 'projects' ? 'text-blue-400' : ''}`} smooth={true} duration={650} onClick={() => setShowMenu(false)}>
+                                Projects
+                            </Link>
                         </li>
                         <li>
-                            <a href="#technologies" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Technologies</a>
+                            <Link
+                                to="technologies" className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-blue-400 mr-4 cursor-pointer ${active === 'technologies' ? 'text-blue-400' : ''}`}
+                                smooth={true}
+                                duration={650}
+                                onClick={() => setShowMenu(false)}
+                            >
+                                Technologies
+                            </Link>
                         </li>
                         <li>
-                            <a href="#about" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About Me</a>
+                            <Link
+                                to="about"
+                                className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-blue-400 mr-4 cursor-pointer ${active === 'about' ? 'text-blue-400' : ''}`}
+                                smooth={true}
+                                duration={650}
+                                onClick={() => setShowMenu(false)}
+                            >
+                                About Me
+                            </Link>
                         </li>
                         <li>
-                            <a href="#contact" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            <Link
+                                to="contact"
+                                className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-blue-400 mr-4 cursor-pointer ${active === 'contact' ? 'text-blue-400' : ''}`}
+                                smooth={true}
+                                duration={650}
+                                onClick={() => setShowMenu(false)}
+                            >
+                                Contact
+                            </Link>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    )
-}
+    );
+};
 
-export default NavBar
+export default NavBar;

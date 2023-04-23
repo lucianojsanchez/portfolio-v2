@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Raleway:wght@500;600;700&family=Space+Grotesk:wght@500&display=swap");
+@font-face {
+  font-family: "My Custom Font";
+  src: url("/fonts/my-custom-font.ttf") format("truetype");
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+}
+
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }
 
 @media (prefers-color-scheme: dark) {

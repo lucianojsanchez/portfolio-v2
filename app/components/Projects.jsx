@@ -19,10 +19,12 @@ const ProjectCards = () => {
     };
 
     return (
+
+
         <div className="my-8 mx-auto max-w-screen-xl">
             <div className="flex items-center my-20 mx-auto max-w-screen-xl">
-                <h1 className="text-4xl md:text-6xl font-bold text-gradient bg-gradient-to-r from-blue-600 to-indigo-800 bg-clip-text text-transparent leading-tight align-middle py-2 pr-8">Projects</h1>
-                <div className="h-1 bg-gray-400/20 flex-1 mx-5"></div>
+                <h1 className="text-4xl md:text-6xl font-bold text-gradient bg-gradient-to-r from-blue-300 to-fuchsia-800 bg-clip-text text-transparent leading-tight align-middle py-2 pr-8 ">Projects</h1>
+                <div className="h-1 bg-gray-400/20 flex-1 mx-5 "></div>
             </div>
             <div className="grid grid-cols-1 gap-14 mx-auto max-w-screen-xl max-xl:max-w-[80%]">
                 {projects.map((project, index) => (
@@ -45,12 +47,12 @@ const ProjectCards = () => {
                             </div>
                             <div className="flex items-center justify-end max-xl:justify-center my-5 ">
                                 {project.githubLink && (
-                                    <a href={project.githubLink} className="mx-2 w-5 h-5 transition ease-in-out duration-500 hover:-translate-y-1 hover:text-red-500" target="_blank" rel="noopener noreferrer">
+                                    <a href={project.githubLink} className="mx-2 w-5 h-5 transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300" target="_blank" rel="noopener noreferrer">
                                         <FaGithub className='w-7 h-7' />
                                     </a>
                                 )}
                                 {project.deployLink && (
-                                    <a href={project.deployLink} className="mx-2 w-5 h-5 transition ease-in-out duration-500 hover:-translate-y-1 hover:text-red-500" target="_blank" rel="noopener noreferrer">
+                                    <a href={project.deployLink} className="mx-2 w-5 h-5 transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300" target="_blank" rel="noopener noreferrer">
                                         <FaExternalLinkAlt className='w-7 h-7' />
                                     </a>
                                 )}
@@ -60,6 +62,7 @@ const ProjectCards = () => {
                 ))}
             </div>
         </div>
+
     );
 };
 
