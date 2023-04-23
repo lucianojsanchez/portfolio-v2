@@ -62,7 +62,7 @@ const Technologies = () => {
                 </div>
                 <div>
                     <div className='flex flex-col items-center'>
-                        <FaDatabase className="mx-2 transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center mb-4 w-12 h-12" />
+                        <FaDatabase className="mx-2 transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center mb-4 w-12 h-12 text-white" />
                         <h1 className="text-2xl font-bold mb-3 text-center text-white">Backend</h1>
                     </div>
                     <div className={`grid grid-cols-3 gap-7 py-10 w-full ${showBackend ? "grid" : "hidden lg:grid"}`}>
@@ -86,7 +86,7 @@ const Technologies = () => {
                 </div>
                 <div>
                     <div className='flex flex-col items-center'>
-                        <FaTools className="mx-2 transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center mb-4 w-12 h-12" />
+                        <FaTools className="mx-2 transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center mb-4 w-12 h-12 text-white" />
                         <h1 className="text-2xl font-bold mb-3 text-center text-white">Tools</h1>
                     </div>
                     <div className={`grid grid-cols-3 gap-7 py-10 w-full  ${showTools ? "grid" : "hidden lg:grid"}`}>
