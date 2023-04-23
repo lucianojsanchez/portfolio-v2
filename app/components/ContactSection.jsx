@@ -1,7 +1,7 @@
 import { FaEnvelope, FaLinkedin, FaGithub, FaWhatsapp, FaFilePdf, FaTwitter } from 'react-icons/fa';
 
 
-// a recreation of my old portfolio contact =)
+// a recreation of my old portfolio contact component =)
 
 const ContactSection = () => {
     return (
@@ -15,7 +15,7 @@ const ContactSection = () => {
 
                                     <div className="flex-shrink-0 ">
                                         <a href="mailto:lucianojoelsanchez@gmail.com" className="hover:text-blue-400">
-                                            <FaEnvelope className="transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center w-12 h-12" />
+                                            <FaEnvelope className="transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center w-12 h-12 text-white" />
                                         </a>
                                     </div>
 
@@ -38,7 +38,7 @@ const ContactSection = () => {
 
                                     <div className="flex-shrink-0 ">
                                         <a href="https://github.com/lucianojsanchez" className="hover:text-blue-400">
-                                            <FaGithub className="transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center w-12 h-12" />
+                                            <FaGithub className="transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center w-12 h-12 text-white" />
                                         </a>
                                     </div>
 
@@ -83,7 +83,7 @@ const ContactSection = () => {
                                 <div className="flex max-xl:flex-col items-center">
                                     <div className="flex-shrink-0 ">
                                         <a href="https://wa.link/m8rzyf" className="hover:text-blue-400">
-                                            <FaWhatsapp className="transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center w-12 h-12" />
+                                            <FaWhatsapp className="transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center w-12 h-12 text-white" />
                                         </a>
                                     </div>
 
@@ -106,7 +106,7 @@ const ContactSection = () => {
 
                                     <div className="flex-shrink-0 ">
                                         <a href="https://drive.google.com/drive/u/2/folders/156t5f2oufgfcSaA1C-uoa7RoQaUhDVNA" className="hover:text-blue-400">
-                                            <FaFilePdf className="transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center w-12 h-12" />
+                                            <FaFilePdf className="transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center w-12 h-12 text-white" />
                                         </a>
                                     </div>
 

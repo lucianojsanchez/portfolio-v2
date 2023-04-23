@@ -39,7 +39,7 @@ const Technologies = () => {
                     <div className='flex flex-col items-center'>
                         <FaReact
                             className="mx-2 transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center mb-4 w-12 h-12 " />
-                        <h1 className="text-2xl font-bold mb-3 text-center ">Frontend</h1>
+                        <h1 className="text-2xl font-bold mb-3 text-center text-white">Frontend</h1>
                     </div>
                     <div className={`grid grid-cols-3 gap-7 py-10 w-full  ${showFrontend ? "grid" : "hidden lg:grid"}`}>
                         {frontendTech.map((tech, index) => (
@@ -63,7 +63,7 @@ const Technologies = () => {
                 <div>
                     <div className='flex flex-col items-center'>
                         <FaDatabase className="mx-2 transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center mb-4 w-12 h-12" />
-                        <h1 className="text-2xl font-bold mb-3 text-center">Backend</h1>
+                        <h1 className="text-2xl font-bold mb-3 text-center text-white">Backend</h1>
                     </div>
                     <div className={`grid grid-cols-3 gap-7 py-10 w-full ${showBackend ? "grid" : "hidden lg:grid"}`}>
                         {backendTech.map((tech, index) => (
@@ -77,7 +77,7 @@ const Technologies = () => {
                     </div>
                     <div className="flex justify-center">
                         <button
-                            className="lg:hidden bg-gray-800 p-2 rounded-lg cursor-pointer z-10 shadow-lg shadow-slate-500/30"
+                            className="lg:hidden bg-gray-800 p-2 rounded-lg cursor-pointer z-10 shadow-lg shadow-slate-500/30 text-white"
                             onClick={handleToggleBackend}
                         >
                             {showBackend ? "Hide" : "Show"}
@@ -87,7 +87,7 @@ const Technologies = () => {
                 <div>
                     <div className='flex flex-col items-center'>
                         <FaTools className="mx-2 transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center mb-4 w-12 h-12" />
-                        <h1 className="text-2xl font-bold mb-3 text-center">Tools</h1>
+                        <h1 className="text-2xl font-bold mb-3 text-center text-white">Tools</h1>
                     </div>
                     <div className={`grid grid-cols-3 gap-7 py-10 w-full  ${showTools ? "grid" : "hidden lg:grid"}`}>
                         {tools.map((tool, index) => (
@@ -101,7 +101,7 @@ const Technologies = () => {
                     </div>
                     <div className="flex justify-center">
                         <button
-                            className="lg:hidden bg-gray-800 p-2 rounded-lg cursor-pointer z-10 shadow-lg shadow-slate-500/30"
+                            className="lg:hidden bg-gray-800 p-2 rounded-lg cursor-pointer z-10 shadow-lg shadow-slate-500/30 text-white"
                             onClick={handleToggleTools}
                         >
                             {showTools ? "Hide" : "Show"}

@@ -84,7 +84,7 @@ const NavBar = () => {
                                 className="filter invert brightness(200%) mr-1"
                             />
                         </div>
-                        <span className="text-2xl font-semibold dark:text-white">Luciano</span>
+                        <span className="text-2xl font-semibold dark:text-white text-white">Luciano</span>
                     </Link>
                 </div>
             </div>
