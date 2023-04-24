@@ -35,7 +35,7 @@ export const projects = [
     link: "#",
     stack: ["React", "React Router", "SASS", "CSS Modules", "Framer", "Vite"],
     githubLink: "https://github.com/lucianojsanchez/portfolio",
-    deployLink: "https://front-looking.vercel.app/",
+    deployLink: "https://portfolio-old-luciano.vercel.app/",
   },
 
   {

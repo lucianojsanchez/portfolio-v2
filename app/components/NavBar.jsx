@@ -65,7 +65,7 @@ const NavBar = () => {
 
     return (
         <nav
-            className="flex items-center justify-between flex-wrap p-4 fixed w-full z-20 backdrop-blur-sm bg-slate-300/30"
+            className="flex items-center justify-between flex-wrap p-4 fixed w-full z-20 backdrop-blur-sm bg-slate-500/30"
             style={{ boxShadow: 'rgba(0, 0, 0, 0.75) 0px 10px 30px -10px' }}
         >
             <div className="flex items-center mr-auto">
@@ -81,7 +81,7 @@ const NavBar = () => {
                                 src="/logo.svg"
                                 width={40}
                                 height={40}
-                                className="filter invert brightness(200%) mr-1"
+                                className="filter invert text-white mr-1"
                             />
                         </div>
                         <span className="text-2xl font-semibold dark:text-white text-white">Luciano</span>
@@ -93,20 +93,20 @@ const NavBar = () => {
                     onClick={toggleMenu}
                     className="flex items-center px-3 py-2 border rounded text-gray-200 border-gray-400 hover:text-blue-400 hover:border-white"
                 >
-                    <FaBars />
+                    <FaBars className='text-gray-200' />
                 </button>
             </div>
             <div className={`items-center justify-between w-full md:flex md:w-auto md:order-0 ${showMenu ? '' : 'hidden'}`}>
                 <div className=" items-center justify-center">
                     <ul className="flex flex-wrap md:justify-center max-md:flex-col font-bold ml-auto lg:ml-4 xl:mr-[200px] lg:text-lg">
                         <li>
-                            <Link to="projects" className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-blue-400 mr-4 cursor-pointer ${active === 'projects' ? 'text-blue-400' : ''}`} smooth={true} duration={650} onClick={() => setShowMenu(false)}>
+                            <Link to="projects" className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-[#4f4dff] mr-4 cursor-pointer ${active === 'projects' ? 'text-[#4f4dff]' : ''}`} smooth={true} duration={650} onClick={() => setShowMenu(false)}>
                                 Projects
                             </Link>
                         </li>
                         <li>
                             <Link
-                                to="technologies" className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-blue-400 mr-4 cursor-pointer ${active === 'technologies' ? 'text-blue-400' : ''}`}
+                                to="technologies" className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-[#4f4dff] mr-4 cursor-pointer ${active === 'technologies' ? 'text-[#4f4dff]' : ''}`}
                                 smooth={true}
                                 duration={650}
                                 onClick={() => setShowMenu(false)}
@@ -117,7 +117,7 @@ const NavBar = () => {
                         <li>
                             <Link
                                 to="about"
-                                className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-blue-400 mr-4 cursor-pointer ${active === 'about' ? 'text-blue-400' : ''}`}
+                                className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-[#4f4dff] mr-4 cursor-pointer ${active === 'about' ? 'text-[#4f4dff]' : ''}`}
                                 smooth={true}
                                 duration={650}
                                 onClick={() => setShowMenu(false)}
@@ -128,7 +128,7 @@ const NavBar = () => {
                         <li>
                             <Link
                                 to="contact"
-                                className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-blue-400 mr-4 cursor-pointer ${active === 'contact' ? 'text-blue-400' : ''}`}
+                                className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-[#4f4dff] mr-4 cursor-pointer ${active === 'contact' ? 'text-[#4f4dff]' : ''}`}
                                 smooth={true}
                                 duration={650}
                                 onClick={() => setShowMenu(false)}

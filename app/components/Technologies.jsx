@@ -38,7 +38,7 @@ const Technologies = () => {
                 <div>
                     <div className='flex flex-col items-center'>
                         <FaReact
-                            className="mx-2 transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center mb-4 w-12 h-12 " />
+                            className="mx-2 transition ease-in-out duration-500 hover:-translate-y-1 hover:text-blue-300 text-center mb-4 w-12 h-12 text-white" />
                         <h1 className="text-2xl font-bold mb-3 text-center text-white">Frontend</h1>
                     </div>
                     <div className={`grid grid-cols-3 gap-7 py-10 w-full  ${showFrontend ? "grid" : "hidden lg:grid"}`}>
