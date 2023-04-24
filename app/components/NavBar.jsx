@@ -82,6 +82,7 @@ const NavBar = () => {
                                 width={40}
                                 height={40}
                                 className="filter invert text-white mr-1"
+                                style={{ fill: "white" }}
                             />
                         </div>
                         <span className="text-2xl font-semibold dark:text-white text-white">Luciano</span>
