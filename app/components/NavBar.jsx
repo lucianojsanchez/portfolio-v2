@@ -101,13 +101,13 @@ const NavBar = () => {
                 <div className=" items-center justify-center">
                     <ul className="flex flex-wrap md:justify-center max-md:flex-col font-bold ml-auto lg:ml-4 xl:mr-[200px] lg:text-lg">
                         <li>
-                            <Link to="projects" className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-[#515aff] mr-4 cursor-pointer ${active === 'projects' ? 'text-[#515aff]' : ''}`} smooth={true} duration={650} onClick={() => setShowMenu(false)}>
+                            <Link to="projects" className={`block mt-4 md:inline-block md:mt-0 hover:text-[#515aff] mr-4 cursor-pointer ${active === 'projects' ? 'text-[#515aff]' : 'text-gray-200'}`} smooth={true} duration={650} onClick={() => setShowMenu(false)}>
                                 Projects
                             </Link>
                         </li>
                         <li>
                             <Link
-                                to="technologies" className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-[#515aff] mr-4 cursor-pointer ${active === 'technologies' ? 'text-[#515aff]' : ''}`}
+                                to="technologies" className={`block mt-4 md:inline-block md:mt-0  hover:text-[#515aff] mr-4 cursor-pointer ${active === 'technologies' ? 'text-[#515aff]' : 'text-gray-200'}`}
                                 smooth={true}
                                 duration={650}
                                 onClick={() => setShowMenu(false)}
@@ -118,7 +118,7 @@ const NavBar = () => {
                         <li>
                             <Link
                                 to="about"
-                                className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-[#515aff] mr-4 cursor-pointer ${active === 'about' ? "text-[#515aff]" : ''}`}
+                                className={`block mt-4 md:inline-block md:mt-0  hover:text-[#515aff] mr-4 cursor-pointer ${active === 'about' ? "text-[#515aff]" : 'text-gray-200'}`}
                                 smooth={true}
                                 duration={650}
                                 onClick={() => setShowMenu(false)}
@@ -129,7 +129,7 @@ const NavBar = () => {
                         <li>
                             <Link
                                 to="contact"
-                                className={`block mt-4 md:inline-block md:mt-0 text-gray-200 hover:text-[#515aff] mr-4 cursor-pointer ${active === 'contact' ? 'text-[#515aff]' : ''}`}
+                                className={`block mt-4 md:inline-block md:mt-0  hover:text-[#515aff] mr-4 cursor-pointer ${active === 'contact' ? 'text-[#515aff]' : 'text-gray-200'}`}
                                 smooth={true}
                                 duration={650}
                                 onClick={() => setShowMenu(false)}
